@@ -563,3 +563,24 @@ var ordinalize = exports.ordinalize = function(string) {
 
 	return string;
 }
+
+/**
+ * This function adds lowerCaseFirstChar support to every String object
+ *
+ * Signature:
+ * 		String.lowerCaseFirstChar() == String
+ *
+ * Arguments:
+ * 		N/A
+ *
+ * Returns:
+ * 		String - a string with it's first character lower case
+ *
+ * Examples:
+ * 		"HappyClass".lowerCaseFirstChar() == "happyClass"
+ *
+ * 2013-10-2 09.25.00 - Updated by James Lyon
+ */
+var lowerCaseFirstChar = exports.lowerCaseFirstChar = function(string) {
+    return string.charAt(0).toLowerCase() + string.slice(1);
+}
